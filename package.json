@@ -1,0 +1,81 @@
+{
+  "name": "coc-blade-snippets",
+  "version": "0.0.1",
+  "description": "Laravel blade snippets for coc.nvim",
+  "author": "yaegassy <yosstools@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim"
+  ],
+  "engines": {
+    "coc": "^0.0.80"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaegassy/coc-blade-snippets"
+  },
+  "scripts": {
+    "snippets": "yarn snippets:blade && yarn snippets:helper && yarn snippets:livewire && yarn snippets:snippets",
+    "snippets:blade": "curl -o snippets/blade.json https://raw.githubusercontent.com/onecentlin/laravel-blade-snippets-vscode/master/snippets/blade.json",
+    "snippets:helper": "curl -o snippets/helpers.json https://raw.githubusercontent.com/onecentlin/laravel-blade-snippets-vscode/master/snippets/helpers.json",
+    "snippets:livewire": "curl -o snippets/livewire.json https://raw.githubusercontent.com/onecentlin/laravel-blade-snippets-vscode/master/snippets/livewire.json",
+    "snippets:snippets": "curl -o snippets/snippets.json https://raw.githubusercontent.com/onecentlin/laravel-blade-snippets-vscode/master/snippets/snippets.json",
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "coc.nvim": "^0.0.80",
+    "esbuild": "^0.8.42",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  },
+  "activationEvents": [
+    "onLanguage:blade"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-blade-snippets configuration",
+      "properties": {
+        "bladeSnippets.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-blade-snippets extension"
+        }
+      }
+    },
+    "snippets": [
+      {
+        "language": "blade",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets/helpers.json"
+      },
+      {
+        "language": "blade",
+        "path": "./snippets/livewire.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/blade.json"
+      }
+    ]
+  }
+}
