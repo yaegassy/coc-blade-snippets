@@ -14,7 +14,7 @@ And set `snippets.loadFromExtensions` to `true` in "coc-settings.json"
 }
 ```
 
-## snippetUpdate
+## Update snippets
 
 ```sh
 yarn snippets
