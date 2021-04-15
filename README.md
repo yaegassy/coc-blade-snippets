@@ -1,5 +1,13 @@
 # coc-blade-snippets
 
+## Install
+
+**vim-plug**:
+
+```vim
+Plug 'yaegassy/coc-blade-snippets', {'do': 'yarn install --frozen-lockfile'}
+```
+
 ## Usage
 
 To use it, you need to install [coc-snippets](https://github.com/neoclide/coc-snippets).
