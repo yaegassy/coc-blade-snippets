@@ -1,5 +1,9 @@
 # coc-blade-snippets
 
+## Features
+
+- Snippets completion
+
 ## Install
 
 **vim-plug**:
