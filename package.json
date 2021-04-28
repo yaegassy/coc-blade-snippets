@@ -1,7 +1,7 @@
 {
   "name": "@yaegassy/coc-blade-snippets",
   "version": "0.0.1",
-  "description": "Laravel blade snippets for coc.nvim",
+  "description": "Laravel blade snippets for coc.nvim, Provides 'snippets completion' and 'hover'",
   "author": "yaegassy <yosstools@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
