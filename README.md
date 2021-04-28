@@ -1,10 +1,21 @@
 # coc-blade-snippets
 
+Laravel blade snippets for [coc.nvim](https://github.com/neoclide/coc.nvim). Provides "snippets completion" and "hover".
+
 ## Features
 
 - Snippets completion
+- Hover
 
 ## Install
+
+**CocInstall**:
+
+```vim
+:CocInstall @yaegassy/coc-blade-snippets
+```
+
+> scoped packages
 
 **vim-plug**:
 
@@ -12,7 +23,7 @@
 Plug 'yaegassy/coc-blade-snippets', {'do': 'yarn install --frozen-lockfile'}
 ```
 
-## Usage
+## Usage (snippets completion)
 
 To use it, you need to install [coc-snippets](https://github.com/neoclide/coc-snippets).
 
@@ -26,11 +37,10 @@ And set `snippets.loadFromExtensions` to `true` in "coc-settings.json"
 }
 ```
 
-## Update snippets
+## Related coc.nvim extension
 
-```sh
-yarn snippets
-```
+- [yaegassy/coc-blade-formatter](https://github.com/yaegassy/coc-blade-formatter)
+- [yaegassy/coc-blade-linter](https://github.com/yaegassy/coc-blade-linter)
 
 ## License
 
