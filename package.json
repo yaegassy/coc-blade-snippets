@@ -1,12 +1,17 @@
 {
-  "name": "coc-blade-snippets",
+  "name": "@yaegassy/coc-blade-snippets",
   "version": "0.0.1",
   "description": "Laravel blade snippets for coc.nvim",
   "author": "yaegassy <yosstools@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
   "keywords": [
-    "coc.nvim"
+    "coc.nvim",
+    "laravel",
+    "blade",
+    "php",
+    "vim",
+    "neovim"
   ],
   "engines": {
     "coc": "^0.0.80"
@@ -14,6 +19,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/yaegassy/coc-blade-snippets"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "snippets": "yarn snippets:blade && yarn snippets:helper && yarn snippets:livewire && yarn snippets:snippets",
@@ -33,6 +41,7 @@
     "semi": true
   },
   "devDependencies": {
+    "@types/node": "^14.6.3",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "coc.nvim": "^0.0.80",
