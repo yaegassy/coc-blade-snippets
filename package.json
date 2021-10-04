@@ -1,6 +1,6 @@
 {
   "name": "@yaegassy/coc-blade-snippets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Laravel blade snippets for coc.nvim, Provides snippets completion and hover",
   "author": "yaegassy <yosstools@gmail.com>",
   "license": "MIT",
