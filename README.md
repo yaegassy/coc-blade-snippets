@@ -1,4 +1,10 @@
-# coc-blade-snippets
+# [Archived] coc-blade-snippets
+
+## WARNING
+
+This project is no longer maintained. Please switch to its successor, [coc-blade](https://github.com/yaegassy/coc-blade).
+
+---
 
 Laravel blade snippets for [coc.nvim](https://github.com/neoclide/coc.nvim). Provides "snippets completion" and "hover".
 
